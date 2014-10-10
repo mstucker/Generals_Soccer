@@ -1,0 +1,88 @@
+/*++++++++++++++++++++++++++++++++
+             OVERALL
+++++++++++++++++++++++++++++++++++*/
+*, *:after, *:before{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row-container {
+	padding: 0 10px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+/************************************
+Media Queries
+*************************************/
+@media (min-width: 800px) {
+	
+	/************************************
+	Columns are 80px wide and Gutters are 20px wide for a total of 1180px
+	*************************************/
+
+	.col-1 {
+		width: 6.78%;
+	}
+	.col-2 {
+		width: 15.254%;
+	}
+	.col-3 {
+		width: 23.729%;
+	}
+	.col-4 {
+		width: 32.203%;
+	}
+	.col-5 {
+		width: 40.678%;
+	}
+	.col-6 {
+		width: 49.153%;
+	}
+	.col-7 {
+		width: 57.627%;
+	}
+	.col-8 {
+		width: 66.102%;
+	}
+	.col-9 {
+		width: 74.576%;
+	}
+	.col-10 {
+		width: 83.051%;
+	}
+	.col-11 {
+		width: 91.525%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+
+	/*******************************
+	Column Spacing needs
+	********************************/
+	[class^="col-"] {
+		float: left;
+		min-height: 1px;
+		padding: 0 10px;
+		margin-left: 1.695%
+	}
+	[class^="col-"]:first-child {
+		margin-left: 0px;
+	}
+	[class^="col-"]:last-child {
+		float: right;
+	}
+
+	/*******************************
+	Clear-Fix
+	********************************/
+
+	.group:after,
+	.row-container:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
