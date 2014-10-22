@@ -61,7 +61,7 @@ nav a:hover {
 		padding: 5px 10px;
 		clear: both;
 	}
-		
+}		
 
 
 
@@ -69,5 +69,21 @@ nav a:hover {
 @media screen and (min-width: 768px) {
 	#menu {
 		display: none;
+	}
+	nav li{
+		list-style-type: none;
+		display: inline-block;
+		font-size: 30px;
+		padding-left: 10px;
+	}
+	nav li:first-child{
+		display: none;
+	}
+	.wrapper {
+		max-width: 1200px;
+	}
+	.page-nav {
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 }
