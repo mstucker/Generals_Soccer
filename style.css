@@ -46,6 +46,10 @@ nav a:hover {
 		background: #6b1818;
 		text-align: center;
 		float: right;
+		cursor: pointer;
+	}
+	#menu:hover {
+	color: #FAE957;
 	}
 	#nav.js {
 		display: none;
