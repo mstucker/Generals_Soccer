@@ -2,6 +2,8 @@
              OVERALL
 ++++++++++++++++++++++++++++++++++*/
 *, *:after, *:before{
+	margin: 0;
+	padding: 0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -16,8 +18,119 @@
 /************************************
 Media Queries
 *************************************/
-@media (min-width: 800px) {
+@media (max-width: 799px) {
+
+	/*******************************
+	Column Spacing needs
+	********************************/
+	[class^="col-"] {
+		float: left;
+		min-height: 1px;
+		padding: 0 10px;
+		margin-left: 0px;
+	}
 	
+
+	/************************************
+	Columns are 80px wide and Gutters are 20px wide for a total of 1180px
+	*************************************/
+
+	.col-1, 
+	.col-2, 
+	.col-3, 
+	.col-4, 
+	.col-5,
+	.col-6, 
+	.col-7, 
+	.col-8, 
+	.col-9, 
+	.col-10, 
+	.col-11, 
+	.col-12 {
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 800px and max-width: 1199px) {
+
+	/*******************************
+	Column Spacing needs
+	********************************/
+	[class^="col-"] {
+		float: left;
+		min-height: 1px;
+		padding: 0 10px;
+		margin-left: 2%;
+	}
+	[class^="col-"]:first-child {
+		margin-left: 0px;
+	}
+	[class^="col-"]:last-child {
+		float: right;
+	}	
+
+	/************************************
+	Columns are 60px wide and Gutters are 20px wide for a total of 1000px
+	*************************************/
+
+	.col-1 {
+		width: 6.5%;
+	}
+	.col-2 {
+		width: 15%;
+	}
+	.col-3 {
+		width: 23.5%;
+	}
+	.col-4 {
+		width: 32%;
+	}
+	.col-5 {
+		width: 40.5%;
+	}
+	.col-6 {
+		width: 49%;
+	}
+	.col-7 {
+		width: 57.5%;
+	}
+	.col-8 {
+		width: 66%;
+	}
+	.col-9 {
+		width: 74.5%;
+	}
+	.col-10 {
+		width: 83%;
+	}
+	.col-11 {
+		width: 91.5%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	
+	/*******************************
+	Column Spacing needs
+	********************************/
+	[class^="col-"] {
+		float: left;
+		min-height: 1px;
+		padding: 0 10px;
+		margin-left: 1.695%;
+	}
+	[class^="col-"]:first-child {
+		margin-left: 0px;
+	}
+	[class^="col-"]:last-child {
+		float: right;
+	}
+
 	/************************************
 	Columns are 80px wide and Gutters are 20px wide for a total of 1180px
 	*************************************/
@@ -58,31 +171,16 @@ Media Queries
 	.col-12 {
 		width: 100%;
 	}
+}
 
-	/*******************************
-	Column Spacing needs
-	********************************/
-	[class^="col-"] {
-		float: left;
-		min-height: 1px;
-		padding: 0 10px;
-		margin-left: 1.695%
-	}
-	[class^="col-"]:first-child {
-		margin-left: 0px;
-	}
-	[class^="col-"]:last-child {
-		float: right;
-	}
 
-	/*******************************
-	Clear-Fix
-	********************************/
+/*******************************
+Clear-Fix
+********************************/
 
-	.group:after,
-	.row-container:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+.group:after,
+.row-container:after {
+	content: "";
+	display: table;
+	clear: both;
 }
