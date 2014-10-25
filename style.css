@@ -1,3 +1,7 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	display: block;
 	width: 100%;
@@ -16,8 +20,7 @@ header {
 nav {
 	float: right;
 	color: #b8a927;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 48px;
+	font-size: 36px;
 }
 
 nav a {
@@ -30,7 +33,10 @@ nav a:hover {
 }
 
 #page-title {
-	display: none;
+	text-align: center;
+	color: #b8a927;
+	width: 200px;
+	margin: -10px auto 0 auto;
 }
 
 .logo {
