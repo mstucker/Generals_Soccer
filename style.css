@@ -20,7 +20,7 @@ header {
 nav {
 	float: right;
 	color: #b8a927;
-	font-size: 36px;
+	font-size: 30px;
 }
 
 nav li:hover {
@@ -57,6 +57,7 @@ nav a:hover {
 		text-align: center;
 		float: right;
 		cursor: pointer;
+		font-size: 50px;
 	}
 	#menu:hover {
 	color: #FAE957;
